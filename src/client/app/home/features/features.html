@@ -1,0 +1,10 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div data-ng-repeat="f in vm.text.features" class="col-md-4">
+      <h2 data-ng-bind="f.heading"></h2>
+      <p data-ng-repeat="p in f.paragraphs" data-ng-bind="p"></p>
+      <p><a data-ng-repeat="a in f.actions" href="a.href" role="button" data-ng-bind="a.label" class="btn btn-primary"></a></p>
+    </div>
+  </div>
+</div>

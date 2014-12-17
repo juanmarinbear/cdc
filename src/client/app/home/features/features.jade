@@ -1,0 +1,7 @@
+.container-fluid
+  .row
+    .col-md-4(data-ng-repeat='f in vm.text.features')
+      h2(data-ng-bind='f.heading')
+      p(data-ng-repeat='p in f.paragraphs' data-ng-bind='p')
+      p
+        a(class='btn btn-primary' data-ng-repeat='a in f.actions' href='a.href' role='button' data-ng-bind='a.label')

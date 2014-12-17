@@ -1,0 +1,6 @@
+
+<div class="jumbotron">
+  <h1 data-ng-bind="vm.text.heading"></h1>
+  <p data-ng-repeat="p in vm.text.paragraphs" data-ng-bind="p"></p>
+  <p><a data-ng-repeat="a in vm.text.actions" href="a.href" role="button" data-ng-bind="a.label" class="btn btn-primary btn-lg"></a></p>
+</div>
